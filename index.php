@@ -1,3 +1,6 @@
+<?php
+ include('connection.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,26 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISE</title>
-    <!-- CSS  -->
-    <link rel="stylesheet" href="css/Mystyle.css" />
-
-    <link rel="stylesheet" href="css/box_stylef.css" />
-    <!-- end CSS -->
-    <!-- OTHER LINKS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/footer_style1.css" />
-    <!-- end OTHER -->
-    <!-- BootStrap Css -->
-    <link rel="stylesheet" href="css/BS_css/css/BS.min.css" />
-    <!-- end BS css -->
+  <?php include'commoncode/commoncss.php'?>
     <style>
       .fixedParallex {
         position: fixed;
       }
-
       .fixedParallexcar {
         position: fixed;
         top: 10vh;
@@ -73,7 +61,7 @@
         <li><a href="startup.html">Stratups</a></li>
         <li><a href="index.html">About us</a></li>
         <li class="dashnav">|</li>
-        <a href="sign-up.html"><button class="btnclass">Sign-in</button></a>
+        <a href="sign-up.php"><button class="btnclass">Sign-in</button></a>
         <button class="btnclass">Log-out</button>
       </ul>
     </nav>
@@ -102,7 +90,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="sign-up.html"
+                <a href="sign-up.php"
                   ><button class="btnclass2">Join us</button></a
                 >
               </div>
@@ -131,7 +119,7 @@
               </div>
 
               <div class="btnincar">
-                <a href="sign-up.html"
+                <a href="sign-up.php"
                   ><button class="btnclass2">Join us</button></a
                 >
               </div>
@@ -159,7 +147,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="sign-up.html"
+                <a href="sign-up.php"
                   ><button class="btnclass2">Join us</button></a
                 >
               </div>

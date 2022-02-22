@@ -1,3 +1,6 @@
+<?php
+ include('connection.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -54,17 +57,17 @@
      <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="login_signup.php" method="post" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" name="loginusername" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password"  autocomplete="on" />
+              <input type="password" name="loginpass" placeholder="Password"  autocomplete="on" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" name="loginu" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -81,12 +84,13 @@
               </a>
             </div>
           </form>
-          <form action="#" class="sign-up-form">
+          <form action="login_signup.php" method="post" class="sign-up-form">
             <h2 class="title">Sign up</h2>
                <div class="input-field">
               <i class="fas fa-user"></i>
               <input   onkeyup="validateFullName()"
                 id="FullName"
+                name="fullname"
                 type="text"
                 autocomplete="off"
                 placeholder="Full Name"  required/>
@@ -101,6 +105,7 @@
               <i class="fas fa-user"></i>
               <input   onkeyup="validate()"
                 id="username"
+                name="username"
                 type="text"
                 autocomplete="off"
                 placeholder="Username"  required/>
@@ -115,6 +120,7 @@
               <i class="fas fa-envelope"></i>
               <input   onkeyup="check()"
             id="email"
+            name="email"
             type="text"
             autocomplete="off"
             placeholder="Enter Email Address"  required/>
@@ -130,6 +136,7 @@
               <i class="fas fa-lock"></i>
                 <input   onkeyup="passvalidate()"
             id="pass"
+            name="pass"
             type="password"
             placeholder="Enter Password" autocomplete="on"/>
                <div class="icons">
@@ -143,6 +150,7 @@
               <i class="fas fa-lock"></i>
                 <input   onkeyup="passvalidateconf()"
             id="passconf"
+            name="passc"
             type="password"
             placeholder="Confirm Password" autocomplete="on"/>
                <div class="icons">
@@ -160,7 +168,7 @@
                   <option value="Innovator">Innovator</option>
               </select>
             
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" name="signup" class="btn" value="Sign up" />
            
           </form>
         </div>
