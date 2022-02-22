@@ -55,11 +55,11 @@
         <i class="fas fa-bars"></i>
       </label>
       <ul class="nav-ul">
-        <li clas><a class="active-" href="index.html">Home</a></li>
-        <li><a href="index.html">SCommunity</a></li>
-        <li><a href="index.html">HierDev</a></li>
-        <li><a href="startup.html">Stratups</a></li>
-        <li><a href="index.html">About us</a></li>
+        <li clas><a class="active-" href="index.php">Home</a></li>
+        <li><a href="index.php">SCommunity</a></li>
+        <li><a href="index.php">HierDev</a></li>
+        <li><a href="startup.php">Stratups</a></li>
+        <li><a href="index.php">About us</a></li>
         <li class="dashnav">|</li>
         <a href="sign-up.php"><button class="btnclass">Sign-in</button></a>
         <button class="btnclass">Log-out</button>
