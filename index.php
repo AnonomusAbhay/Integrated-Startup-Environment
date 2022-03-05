@@ -60,6 +60,8 @@
         <li><a href="index.php">HierDev</a></li>
         <li><a href="startup.php">Stratups</a></li>
         <li><a href="index.php">About us</a></li>
+         <li><a href="tempchatroom/chatroomdesign.php">chatroom</a></li>
+         <li><a href="user.php">tempuser</a></li>
         <li class="dashnav">|</li>
         <a href="sign-up.php"><button class="btnclass">Sign-in</button></a>
         <button class="btnclass">Log-out</button>
@@ -294,9 +296,7 @@
               <i class="fab fa-instagram fa-fw"></i>
               <i class="fab fa-linkedin fa-fw"></i>
               <i class="fab fa-twitter fa-fw"></i>
-              <!-- <br>
-                        <br><br><br><br>
-                        <br> -->
+             
             </div>
           </div>
         </div>

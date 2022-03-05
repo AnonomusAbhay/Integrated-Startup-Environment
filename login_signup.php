@@ -60,11 +60,12 @@ session_start();
              if(password_verify($_POST['loginpass'],$result_fetch['password']))
              {
                $_SESSION['logged_in'] =true;
+               $_SESSION['Id']=$result_fetch['Id'];
                $_SESSION['username']=$result_fetch['Uname'];
                echo"<script> 
                   alert('session julala');
                    window.location.href='index.php';</script>";
-               echo "right";
+              
 
              }else
              {
